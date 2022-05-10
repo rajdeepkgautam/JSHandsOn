@@ -1,0 +1,57 @@
+switch(A) {
+	  
+    case '+':
+     return B+C;
+     break;
+   
+    case '-' :
+       return B-C;
+       break;
+       
+    case '*' :
+      return C*B;
+      break;
+      
+    
+    case '/' :
+      return B/C;
+      break;
+    
+    default :
+    return "Invalid Input";
+    
+    
+   }
+   
+};
+
+const Check_divisibility = (N) => {
+    if(N%9==0&&N%6==0) {
+      
+      return "Divisible by both"
+    }
+
+    else
+      return "Not Divisible by both"
+};
+
+const isEligible = (a) => {
+    if(a>=18)
+      return "Eligible for Voting"
+    else
+      return "Not Eligible for Voting"
+    
+};
+
+
+const findRelation = (x,y) => {
+    
+    if(x<y)
+      return x + " is smaller than " + y ;
+    
+    else if(x>y)
+     return x + " is greater than " + y;
+      
+    else if(x===y)
+      return  x + " is equal to " + y;
+};

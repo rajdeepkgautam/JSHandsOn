@@ -1,0 +1,78 @@
+const Find_Digits = (N) => 
+{
+  let c=0;
+ 
+	 while(N!==0){
+	   N=parseInt(N/10);
+	   c++;
+	 }
+	 return c;
+};
+
+const Find_Five = (N) => 
+{
+  let c=0;
+  var a;
+	 while(N!==0) {
+	   a=(N%10);
+	   if(a===5)
+	    c++;
+	   N=parseInt(N/10);
+	   }
+	   return c;
+};
+
+const findSum = (n) => {
+    let a = 0;
+      for (let i=0; i<=n; i++) {
+        if(i%2===0)
+          a = i+a;
+        
+      }
+      return a;
+  };
+
+  const Print_pattern = (N) => 
+{
+  let string = ""
+  for(let i = 1; i<=N; i++) {
+    
+    for(let r = 1; r<=i; r++) {
+      string += "*"
+      }
+      
+  string += "\n";
+  }
+  console.log(string);
+};
+
+const Prime_Check = (N) => 
+{
+  let c = 0;
+	 for(let i=1; i<=N;i++) {
+	   if(N%i==0)
+	    c++;
+	 }
+	 if(c==2)
+	  return "YES";
+	 else
+	  return "NO";
+	
+};
+
+const printNumbers = (n) => {
+    
+    for(let i=1; i<=n; i++) 
+      console.log(i)
+      
+      
+      
+    
+    
+};
+
+const Print_Table = (N) => 
+{
+	for(i=1; i<=10; i++)
+	  console.log(N + " * " + i + " = " + i*N)
+};
