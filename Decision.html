@@ -55,3 +55,90 @@ const findRelation = (x,y) => {
     else if(x===y)
       return  x + " is equal to " + y;
 };
+	    
+const findGrades = (a) => {
+    
+    if(a>=41&&a<=50)
+      return "A"
+      
+    else if(a>=31&&a<=40)
+      return "B"  
+      
+    else if(a>=21&&a<=30)
+      return "C"
+      
+    else if(a>=11&&a<=20)
+      return "D"
+      
+    else if(a<11)
+      return "E"
+    
+};
+	    
+	    
+	    
+const getValue = (a) => {
+  
+  if(a=='P'||a=='p')
+    return "PrepBytes"
+    
+ else if(a==='Z'||a==='z')
+    return "Zenith"
+    
+  else if(a==='E'||a==='e')
+    return "Expert Coder"
+    
+  else if(a==='D'||a==='d')
+    return "Data Structure"
+    
+};
+	    
+	    
+
+const Max_out_of_three = (A,B,C) => {
+  return ((A>B && B>C)?A: (B>C)?B:C);
+   /* if(A<=B&&A<=C)
+      return C
+      
+    else if(A>=B&&B>=C)
+      return A
+    
+    else if(B>=A&&A>=C)
+      return B*/
+
+
+};
+	    
+const findSndSmallest = (x,y,z) => {
+    if (x <= y && x <= z)
+       return y;
+       
+    else if (y <= x && y <= z)
+        return x;
+ 
+    else
+       return z;
+    
+};
+	    
+	    
+	    
+const Triangle_Check = (A,B,C) => {
+  if(A>90)
+{
+  return "obtuse";
+}
+else if(B>90)
+{
+  return "obtuse";
+}
+else if(C>90)
+{
+  return "obtuse";
+}
+else{
+  return "acute";
+}
+
+    
+};
