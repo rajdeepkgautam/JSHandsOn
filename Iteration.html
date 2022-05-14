@@ -31,6 +31,30 @@ const findSum = (n) => {
       }
       return a;
   };
+			 
+			 
+ const Number_Sum = (N) => 
+{
+  let sum = 0;
+  
+	while(N) {
+	  sum = sum  + N%10;
+	  N = Math.floor(N/10);
+	  }
+	  return sum;
+};
+	      
+	      
+const Print_Odd = (N) => 
+{
+	   for(let i=2; i<N; i++) {
+	   if(i==2)
+	   console.log(i);
+	   if(i%2!==0)
+	   console.log(i);
+	 }
+};
+
 
   const Print_pattern = (N) => 
 {
