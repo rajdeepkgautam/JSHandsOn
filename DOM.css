@@ -1,0 +1,13 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+}
+
+.child{
+    height : 100px;
+    width : 100px;
+    margin: 10px;
+    padding: 20px;
+    background-color : blanchedalmond;
+
+}
